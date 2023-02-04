@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .icon {
+    @apply h-5 w-5;
+  }
+  .icon-playback {
+    @apply icon cursor-pointer hover:scale-125;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    display: none;
+  }
+  .scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: inherit;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #615f5f;
+    border-radius: 100vh;
+    border: none;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #615f5f;
+  }
+}
